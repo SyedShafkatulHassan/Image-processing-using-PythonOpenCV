@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 image = cv2.imread('image.jpg')
 
+
 change_sized_image = cv2.resize(image, (700, 700))
 
 change_sized_image_t = cv2.inRange(change_sized_image, np.array([60,60,60]), np.array([250,250,250]))
